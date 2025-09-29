@@ -116,7 +116,8 @@ function checkIfMaxReached() {
 
 function showGreeting(name, team) {
   const teamName = team.charAt(0).toUpperCase() + team.slice(1);
-  greetingElem.textContent = `Welcome ${name} to Team ${teamName}!`;
+  const nameCapitalized = name.charAt(0).toUpperCase() + name.slice(1);
+  greetingElem.textContent = `Welcome ${nameCapitalized} to Team ${teamName}!`;
   greetingElem.style.display = "block";
 }
 
